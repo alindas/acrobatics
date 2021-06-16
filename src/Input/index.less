@@ -1,0 +1,93 @@
+.input_item {
+  position: relative;
+  .input {
+    padding: 0 10px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'tfutura', Arial, sans-serif;
+    &:focus {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .input_large {
+    margin: 29px 0 0 0;
+    font-size: 24px;
+    font-weight: 400;
+    height: 53px;
+    &:focus {
+      +.placeholder {
+        -ms-transform: translateY(-27px) scale(0.6);
+        transform: translateY(-27px) scale(0.6);
+      }
+    }
+  }
+  .input_middle {
+    margin: 15px 0 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    height: 38px;
+    &:focus {
+      +.placeholder {
+        -ms-transform: translateY(-20px) scale(0.7);
+        transform: translateY(-20px) scale(0.7);
+      }
+    }
+  }
+  .input_small {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    height: 25px;
+    &:focus {
+      +.placeholder {
+        -ms-transform: scale(0.001);
+        transform: scale(0.001);
+      }
+    }
+  }
+  .placeholder {
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    color: #777777;
+    font-weight: 400;
+    transform: translateZ(0);
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  }
+  .placeholder_large {
+    top: 43px;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .placeholder_middle {
+    top: 21px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .placeholder_small {
+    top: 6px;
+    font-size: 14px;
+  }
+  .placeholder_large_filled {
+    -ms-transform: translateY(-27px) scale(0.6);
+    transform: translateY(-27px) scale(0.6);
+  }
+  .placeholder_middle_filled {
+    -ms-transform: translateY(-20px) scale(0.7);
+    transform: translateY(-20px) scale(0.7);
+  }
+  .placeholder_small_filled {
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+}
